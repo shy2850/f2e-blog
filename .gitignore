@@ -57,3 +57,11 @@ typings/
 # dotenv environment variables file
 .env
 
+# dev folder
+test
+
+# serve output
+dist
+
+# gh-pages output
+output
