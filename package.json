@@ -4,9 +4,9 @@
   "description": "blog template build by f2e-server",
   "main": "index.js",
   "scripts": {
-    "tsc": "rm -rf ./dist & tsc",
+    "tsc": "tsc",
     "start": "tsc & f2e start",
-    "lint": "tslint src/*.ts",
+    "lint": "tslint lib/*.ts",
     "build": "f2e build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

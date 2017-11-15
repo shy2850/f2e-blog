@@ -13,7 +13,6 @@
             },
             {
                 "title": "工具",
-                "to": "/utils",
                 "children": [
                     {
                         "title": "f2e-server",
@@ -34,5 +33,10 @@
             "icon": "github",
             "color": "#333"
         }
+    ],
+    "tags": [
+        "前端",
+        "f2e-server",
+        "前端构建"
     ]
 }

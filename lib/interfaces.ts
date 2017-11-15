@@ -15,3 +15,10 @@ interface Menu {
     title: string
     children?: Menu[]
 }
+
+interface Article {
+    md: string
+    tag: string
+    menu: string
+    title: string
+}

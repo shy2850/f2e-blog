@@ -23,6 +23,9 @@ const createNativeElement = (tag: string, {children, ...props}) => () => {
     let propsList = []
     for (let k in props) {
         const v = props[k]
+        if (!v) {
+            continue
+        }
         switch (k) {
             case 'class':
             case 'className':

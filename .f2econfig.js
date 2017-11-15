@@ -4,7 +4,7 @@ module.exports = {
     livereload: !build,
     build,
     buildFilter: pathname => !pathname || /^src\/?/.test(pathname),
-    outputFilter: pathname => !pathname || !/^src\/?/.test(pathname) && /\.html$/.test(pathname),
+    outputFilter: pathname => !pathname || !/^src\/?/.test(pathname),
     gzip: true,
     // app: 'static',
     middlewares: [
