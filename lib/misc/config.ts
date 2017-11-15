@@ -3,6 +3,7 @@ import marked from './marked'
 import { readFileSync, writeFileSync } from 'fs'
 import { createElement } from '../react'
 import Body from '../components/Body'
+import ArticleList from '../components/ArticleList'
 
 export const source_path = 'src'
 
