@@ -6,7 +6,7 @@
         "outDir": "./dist",
         "pretty": true,
         "jsx": "react",
-        "target": "esnext"
+        "target": "ES6"
     },
     "include": [
         "lib/*.ts",

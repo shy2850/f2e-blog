@@ -3,12 +3,12 @@ const build = argv[argv.length - 1] === 'build'
 module.exports = {
     livereload: !build,
     build,
+    buildFilter: pathname => !pathname || /^src\/?/.test(pathname),
+    outputFilter: pathname => !pathname || !/^src\/?/.test(pathname) && /\.html$/.test(pathname),
     gzip: true,
     // app: 'static',
     middlewares: [
-        {
-            middleware: 'template'
-        }
+        require('./dist/route/index')
     ],
-    output: require('path').join(__dirname, '../f2e-output')
+    output: require('path').join(__dirname, './output')
 }

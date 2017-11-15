@@ -4,9 +4,10 @@
   "description": "blog template build by f2e-server",
   "main": "index.js",
   "scripts": {
-    "tec": "tsc",
-    "dev": "tsc & f2e start",
+    "tsc": "rm -rf ./dist & tsc",
+    "start": "tsc & f2e start",
     "lint": "tslint src/*.ts",
+    "build": "f2e build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +22,9 @@
   "homepage": "https://github.com/shy2850/f2e-blog#readme",
   "dependencies": {
     "@types/node": "^8.0.51",
+    "bulma": "^0.6.1",
     "f2e-server": "^2.6.4",
+    "marked": "^0.3.6",
     "tslint": "^5.8.0",
     "tslint-eslint-rules": "^4.1.1",
     "typescript": "^2.6.1"

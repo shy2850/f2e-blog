@@ -1,0 +1,38 @@
+{
+    "title": "云香水识的Blog",
+    "keywords": "云香水识的博客, shy2850, f2e-blog, f2e-server",
+    "description": "记录个人关注的前端技术点，分享心情，开心每一天！",
+    "theme": "primary",
+    "menus": {
+        "title": "云香水识",
+        "to": "/",
+        "children":[
+            {
+                "title": "首页",
+                "to": "/"
+            },
+            {
+                "title": "工具",
+                "to": "/utils",
+                "children": [
+                    {
+                        "title": "f2e-server",
+                        "to": "/utils/f2e-server"
+                    },
+                    {
+                        "title": "f2e-blog",
+                        "to": "/utils/f2e-blog"
+                    }
+                ]
+            }
+        ]
+    },
+    "menuEnd": [
+        {
+            "title": "github",
+            "to": "https://github.com/shy2850",
+            "icon": "github",
+            "color": "#333"
+        }
+    ]
+}
