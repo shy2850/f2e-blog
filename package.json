@@ -4,6 +4,7 @@
   "description": "blog template build by f2e-server",
   "main": "index.js",
   "scripts": {
+    "install": "cp -rf ./node_modules/font-awesome/fonts ./src",
     "tsc": "tsc",
     "start": "tsc & f2e start",
     "lint": "tslint lib/*.ts",
@@ -23,8 +24,15 @@
   "dependencies": {
     "@types/node": "^8.0.51",
     "bulma": "^0.6.1",
+    "f2e-middle-typescript": "^0.2.0",
     "f2e-server": "^2.6.4",
+    "font-awesome": "^4.7.0",
+    "highlight.js": "^9.12.0",
     "marked": "^0.3.6",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-router": "^4.2.0",
+    "requirejs": "^2.3.5",
     "tslint": "^5.8.0",
     "tslint-eslint-rules": "^4.1.1",
     "typescript": "^2.6.1"

@@ -1,8 +1,7 @@
 import React from '../react'
-
 export default (props) => {
     const {
-        theme = 'primary',
+        theme,
         menus,
         menuEnd
     } = props
@@ -11,7 +10,7 @@ export default (props) => {
     <div className={`navbar is-${theme}`}>
         <div class="container">
             <div className="navbar-brand">
-                    <a className="navbar-item" href={menus.to}>{menus.title}</a>
+                <a className="navbar-item" href={menus.to}>{menus.title}</a>
                 <div className="navbar-burger burger" data-target="navbar-toggle-menu">
                     <span></span>
                     <span></span>
@@ -29,15 +28,15 @@ export default (props) => {
                             </div>
                         </div>)}
                 </div>
-            </div>
-            <div className="navbar-end">
-                <div className="navbar-item">
-                    <div class="field is-grouped">
-                        {menuEnd && menuEnd.map(({title, to, icon, color}) => <a class="navbar-item is-hidden-desktop-only" href={to} target="_blank">
-                            <span class="icon" style={{color}} title={title}>
-                                <i class={`fa fa-lg fa-${icon}`}></i>
-                            </span>
-                        </a>)}
+                <div className="navbar-end">
+                    <div className="navbar-item">
+                        <div class="field is-grouped">
+                            {menuEnd && menuEnd.map(({title, to, icon, color}) => <a class="navbar-item is-hidden-desktop-only" href={to} target="_blank">
+                                <span class="icon" style={{color}} title={title}>
+                                    <i class={`fa fa-lg fa-${icon}`}></i>
+                                </span>
+                            </a>)}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ const createStyle = styleObject => Object.keys(styleObject).map(k => {
     if (/width|height|left|top|bottom|right|padding|margin|border|size/i.test(k) && typeof v === 'number') {
         return k + ': ' + v + 'px'
     }
-    return k + ':' + v
+    return typeof v === 'undefined' ? '' : (k + ':' + v)
 }).join(';')
 
 const createNativeElement = (tag: string, {children, ...props}) => () => {

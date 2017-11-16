@@ -65,3 +65,6 @@ dist
 
 # gh-pages output
 output
+
+# fonts
+fonts/
