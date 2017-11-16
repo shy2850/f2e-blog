@@ -1,7 +1,6 @@
-interface Props {
-    children?: ElementNode[]|string
-}
 interface Component {
+    props?
+    state?
     render: Function
 }
 interface ElementNode {
@@ -19,7 +18,6 @@ interface Menu {
 }
 
 interface Article {
-    menu: string,
     title: string,
     pathname: string,
     keywords: string[]

@@ -1,8 +1,8 @@
 export default class implements Component {
-    constructor (props: Props) {
+    constructor (props) {
         this.props = props
     }
-    props: Props
+    props
     render(): ElementNode | string {
         return ''
     }

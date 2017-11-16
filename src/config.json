@@ -16,11 +16,11 @@
         "children": [
           {
             "title": "f2e-server",
-            "to": "/utils/f2e-server"
+            "to": "/utils/f2e-server/"
           },
           {
             "title": "f2e-blog",
-            "to": "/utils/f2e-blog"
+            "to": "/utils/f2e-blog/"
           }
         ]
       }
@@ -44,20 +44,7 @@
   "articles": [
     {
       "title": "f2e-blog 脚手架",
-      "pathname": "utils/f2e-blog/bootstrap/",
-      "menu": "utils/f2e-blog/bootstrap/",
-      "keywords": [
-        "f2e-blog",
-        "博客",
-        "文档"
-      ],
-      "description": "使用 f2e-blog 逐步完成个人博客环境搭建",
-      "date": "2017/11/16"
-    },
-    {
-      "title": "f2e-blog 脚手架",
-      "pathname": "utils/f2e-blog/bootstrap",
-      "menu": "src/utils/f2e-blog/",
+      "pathname": "/utils/f2e-blog/bootstrap",
       "keywords": [
         "f2e-blog",
         "博客",

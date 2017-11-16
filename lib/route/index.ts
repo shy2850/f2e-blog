@@ -12,7 +12,7 @@ module.exports = (conf) => ({
         let outputPath = pathname.replace(replacer, '')
         if (/\.md$/.test(pathname)) {
             outputPath = outputPath.replace(/\.md$/, '/index.html')
-            data = renderMD(data, outputPath.replace(/index\.html$/, ''))
+            data = renderMD(data, '/' + outputPath.replace(/\/index\.html$/, ''))
         } else if (/\.html$/.test(pathname)) {
             data = renderHTML(data)
         } else if (/\.tsx?$/.test(pathname)) {

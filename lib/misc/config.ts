@@ -49,7 +49,6 @@ export const renderMD = (({map, model}) => (md, pathname) => {
     let cfg: Article = {
         title: '',
         pathname,
-        menu: pathname.replace(/[^\/\\]+$/, ''),
         keywords: [],
         description: '',
         date: ''

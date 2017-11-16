@@ -1,4 +1,5 @@
 import React from '../react'
+const Href = to => `/#${to}`
 export default (props) => {
     const {
         theme,
@@ -10,7 +11,7 @@ export default (props) => {
     <div className={`navbar is-${theme}`}>
         <div class="container">
             <div className="navbar-brand">
-                <a className="navbar-item" href={menus.to}>{menus.title}</a>
+                    <a className="navbar-item" href={Href(menus.to)}>{menus.title}</a>
                 <div className="navbar-burger burger" data-target="navbar-toggle-menu">
                     <span></span>
                     <span></span>
@@ -20,11 +21,11 @@ export default (props) => {
             <div id="navbar-toggle-menu" className="navbar-menu">
                 <div className="navbar-start">
                     {menus.children && menus.children.map(({ title, to, children }) => !children
-                        ? <a class="navbar-item" href={to}>{title}</a>
+                        ? <a class="navbar-item" href={Href(to)}>{title}</a>
                         : <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link" href={to}>{title}</a>
+                            <a class="navbar-link" href={Href(to)}>{title}</a>
                             <div className="navbar-dropdown">
-                            {children.map(({ title, to }) => <a class="navbar-item" href={to}>{title}</a>)}
+                            {children.map(({ title, to }) => <a class="navbar-item" href={Href(to)}>{title}</a>)}
                             </div>
                         </div>)}
                 </div>
