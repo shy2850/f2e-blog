@@ -22,7 +22,7 @@ class List extends React.Component {
                 pathname
             }
         } = this.props
-        return articles.filter((article) => article.pathname.includes(pathname))
+        return articles.filter((article) => ~article.pathname.indexOf(pathname))
     }
     changePage (page) {
         this.setState({page})

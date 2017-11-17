@@ -11,6 +11,10 @@ module.exports = {
     getModuleId,
     middlewares: [
         {
+            test: /^src\/(index|static\/require)\b/,
+            middleware: 'template'
+        },
+        {
             middleware: 'typescript',
             getModuleId,
             tsconfig: {

@@ -15,8 +15,8 @@
         "title": "工具",
         "children": [
           {
-            "title": "f2e-server",
-            "to": "/utils/f2e-server/"
+            "title": "git",
+            "to": "/utils/git/"
           },
           {
             "title": "f2e-blog",
@@ -34,6 +34,9 @@
     }
   ],
   "tags": [
+    "github",
+    "ssh-key",
+    "git",
     "文档",
     "博客",
     "f2e-blog",
@@ -43,8 +46,19 @@
   ],
   "articles": [
     {
+      "title": "ssh-key 指南",
+      "pathname": "/utils/git/ssh-key/",
+      "keywords": [
+        "git",
+        "ssh-key",
+        "github"
+      ],
+      "description": "如何生成SSH key",
+      "date": "2017/11/17"
+    },
+    {
       "title": "f2e-blog 脚手架",
-      "pathname": "/utils/f2e-blog/bootstrap",
+      "pathname": "/utils/f2e-blog/bootstrap/",
       "keywords": [
         "f2e-blog",
         "博客",

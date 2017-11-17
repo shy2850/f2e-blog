@@ -4,11 +4,12 @@
   "description": "blog template build by f2e-server",
   "main": "index.js",
   "scripts": {
-    "install": "cp -rf ./node_modules/font-awesome/fonts ./src",
+    "install": "sh ./install.sh",
     "tsc": "tsc",
-    "start": "tsc & f2e start",
-    "lint": "tslint lib/*.ts",
+    "lint": "tslint lib/**",
+    "start": "f2e start",
     "build": "f2e build",
+    "deploy": "sh ./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
