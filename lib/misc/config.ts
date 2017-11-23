@@ -16,7 +16,9 @@ export const renderHTML = html => Layout.replace(/\{\{(\w+)\}\}/g, (mat, k) => c
 .replace('{{body}}', createElement(Body, config).toString())
 .replace('{{body}}', html)
 
-
+require('chokidar').watch(CFG_PATH).on('all', () => {
+    config = JSON.parse(readFileSync(CFG_PATH).toString())
+})
 
 const updateArticle = (article: Article) => {
     let {

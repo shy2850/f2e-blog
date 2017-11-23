@@ -1,9 +1,10 @@
 title: f2e-blog 脚手架  
 keywords: f2e-blog, 博客, 文档  
 description: 使用 f2e-blog 逐步完成个人博客环境搭建  
-date: 2017/11/16
+date: 2017/11/22
 
 # f2e-blog
+
 f2e-blog 是基于nodejs环境的极简个人博客开发框架。 只需要你了解markdown语法就能快速完成博客文章的发布。
 
 > **以下所有命令请在支持 `*nix-bash` 环境下使用， 不支持 dos或者powershell**
