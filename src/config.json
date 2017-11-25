@@ -23,6 +23,10 @@
             "to": "/utils/f2e-blog/"
           }
         ]
+      },
+      {
+        "title": "Zabbix",
+        "to": "/zabbix/"
       }
     ]
   },
@@ -34,15 +38,46 @@
     }
   ],
   "tags": [
+    "自动化运维",
+    "运维",
+    "zabbix",
     "github",
     "ssh-key",
     "git",
     "文档",
     "博客",
-    "f2e-blog",
-    "前端构建"
+    "f2e-blog"
   ],
   "articles": [
+    {
+      "title": "Zabbix创建触发器",
+      "pathname": "/zabbix/create-trigger/",
+      "keywords": [
+        "zabbix"
+      ],
+      "description": "根据已经完成的监控项数据创建触发器",
+      "date": "2017/11/25"
+    },
+    {
+      "title": "Zabbix创建监控项（采集器）",
+      "pathname": "/zabbix/create-items/",
+      "keywords": [
+        "zabbix"
+      ],
+      "description": "从实例出发， 使用zabbix采集器创建一个最基本的监控项以及图形",
+      "date": "2017/11/25"
+    },
+    {
+      "title": "Zabbix 是什么",
+      "pathname": "/zabbix/what-is-zabbix/",
+      "keywords": [
+        "zabbix",
+        "运维",
+        "自动化运维"
+      ],
+      "description": "介绍 zabbix 在自动化运维中的应用场景",
+      "date": "2017/11/25"
+    },
     {
       "title": "ssh-key 指南",
       "pathname": "/utils/git/ssh-key/",

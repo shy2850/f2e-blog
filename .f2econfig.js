@@ -5,8 +5,8 @@ module.exports = {
     livereload: !build,
     build,
     // useLess: true,
-    buildFilter: pathname => !pathname || /^\/?src\/?/.test(pathname),
-    outputFilter: pathname => !pathname || !/^\/?src\/?/.test(pathname),
+    buildFilter: pathname => !pathname || /^\/?src\/?.*?$/.test(pathname),
+    outputFilter: pathname => !pathname || !/^\/?src\/?.*?$/.test(pathname),
     gzip: true,
     getModuleId,
     middlewares: [
@@ -32,7 +32,7 @@ module.exports = {
         },
         require('./dist/route/index')
     ],
-    buildWatchers(type, pathname, build) {
+    buildWatcher(type, pathname, build) {
         if (/^\/?src\/config\.json$/.test(pathname)) {
             build('')
         }

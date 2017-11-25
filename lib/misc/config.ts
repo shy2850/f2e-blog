@@ -10,7 +10,13 @@ const CFG_PATH = path.join(__dirname, `../../${source_path}/config.json`)
 let config: Config = require(CFG_PATH)
 const { theme } = config
 const Layout = readFileSync(path.join(__dirname, `../../${source_path}/layout.htm`)).toString()
-const save = () => writeFileSync(CFG_PATH, JSON.stringify(config, null, 2))
+const save = () => {
+    const currentCfg = readFileSync(CFG_PATH).toString()
+    const newCfg = JSON.stringify(config, null, 2)
+    if (currentCfg !== newCfg) {
+        writeFileSync(CFG_PATH, newCfg)
+    }
+}
 export const getConfig = (): Config => config
 export const renderHTML = html => Layout.replace(/\{\{(\w+)\}\}/g, (mat, k) => config[k] || mat)
 .replace('{{body}}', createElement(Body, config).toString())
