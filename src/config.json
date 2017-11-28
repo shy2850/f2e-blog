@@ -38,6 +38,8 @@
     }
   ],
   "tags": [
+    "服务端邮件发送",
+    "mailx",
     "自动化运维",
     "运维",
     "zabbix",
@@ -50,13 +52,24 @@
   ],
   "articles": [
     {
+      "title": "Zabbix创建报警",
+      "pathname": "/zabbix/create-alert/",
+      "keywords": [
+        "zabbix",
+        "mailx",
+        "服务端邮件发送"
+      ],
+      "description": "linux下配置邮件发送，结合Zabbix触发器触发报警邮件发送",
+      "date": "2017/11/28"
+    },
+    {
       "title": "Zabbix创建触发器",
       "pathname": "/zabbix/create-trigger/",
       "keywords": [
         "zabbix"
       ],
       "description": "根据已经完成的监控项数据创建触发器",
-      "date": "2017/11/25"
+      "date": "2017/11/28"
     },
     {
       "title": "Zabbix创建监控项（采集器）",

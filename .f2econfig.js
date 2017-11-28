@@ -1,6 +1,11 @@
 const { argv } = process
 const build = argv[argv.length - 1] === 'build'
 const getModuleId = pathname => pathname.replace('src/static/', '')
+const buildWatcher = build ? undefined : (type, pathname, build) => {
+    if (/^\/?src\/config\.json$/.test(pathname)) {
+        build('')
+    }
+}
 module.exports = {
     livereload: !build,
     build,
@@ -32,10 +37,6 @@ module.exports = {
         },
         require('./dist/route/index')
     ],
-    buildWatcher(type, pathname, build) {
-        if (/^\/?src\/config\.json$/.test(pathname)) {
-            build('')
-        }
-    },
+    buildWatcher,
     output: require('path').join(__dirname, './output')
 }
