@@ -53,6 +53,14 @@ Zabbix就是这样的工具
 
 > `# rpm -ivh http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm`
 
+### 一些配置修改： (ubuntu 14)
+1. Apache2 配置文件位置 `/etc/apache2`
+2. php5 配置 `/etc/php5/apache2/php.ini` 找到 `date.timezone` 设置为 `Asia/Shanghai`
+3. web国际化支持 需要系统安装语言 `apt-get install language-pack-zh-hans`
+4. 字体文件导入， 从windows字体文件夹scp 到 server目录, 文件名修改为全小写 ![导入字体](../img/fonts.png)
+    在服务中配置字体 `/usr/share/zabbix/include/defines.inc.php` 中 替换 `graphfont`
+5. 【配置修改均需要重启Apache】 `service apache2 restart`
+
 # WEB 页面简单介绍 （针对 v3.4）
 
 ![Zabbix Web 页面](../img/base.png)
