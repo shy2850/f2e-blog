@@ -38,6 +38,7 @@
     }
   ],
   "tags": [
+    "自动发现",
     "服务端邮件发送",
     "mailx",
     "自动化运维",
@@ -51,6 +52,16 @@
     "f2e-blog"
   ],
   "articles": [
+    {
+      "title": "Zabbix自动发现",
+      "pathname": "/zabbix/create-discovery/",
+      "keywords": [
+        "zabbix",
+        "自动发现"
+      ],
+      "description": "Zabbix自动发现不仅可以自动发现主机根据模板创建，也可以根据发现规则在指定主机内创建监控项等",
+      "date": "2017/12/2"
+    },
     {
       "title": "Zabbix创建报警",
       "pathname": "/zabbix/create-alert/",
@@ -89,7 +100,7 @@
         "自动化运维"
       ],
       "description": "介绍 zabbix 在自动化运维中的应用场景",
-      "date": "2017/11/25"
+      "date": "2017/12/2"
     },
     {
       "title": "ssh-key 指南",

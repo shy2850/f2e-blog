@@ -11,3 +11,7 @@ $include["../../node_modules/highlight.js/styles/monokai-sublime.css"]
 .content > .tags:last-child {
     margin-top: 2em;
 }
+.content pre {
+    background: #272822;
+    color: #fff;
+}

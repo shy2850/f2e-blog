@@ -1,7 +1,7 @@
 title: Zabbix 是什么
 keywords: zabbix, 运维, 自动化运维
 description: 介绍 zabbix 在自动化运维中的应用场景
-date: 2017/11/25
+date: 2017/12/2
 
 # Zabbix 是什么
 
@@ -29,6 +29,7 @@ Zabbix就是这样的工具
 4. 可配置告警
     - 告警用户
     - 告警媒介类型
+    - 动作配置连接触发器和告警规则
 
 5. 自动发现
     - 主机自动发现配置
@@ -41,6 +42,14 @@ Zabbix就是这样的工具
 7. 模板-应用集
     - 模板： 针对一个主机的一系列 监控项、图形、触发器、自动发现等配置的模型
     - 应用集： 一个模板内监控项的分组
+
+8. 配置关系图
+> 基本单元: `监控项产生图形和触发器`
+>
+> 逻辑单元: `以主机为核心直接关联基本单元、通过模板创建基本单元、或者自动发现规则创建基本单元模型`
+>
+> ![zabbix-items](../img/zabbix-items.png)
+
 
 # Zabbix 安装
 [https://www.zabbix.com/documentation/3.4/zh/manual/installation/install_from_packages](https://www.zabbix.com/documentation/3.4/zh/manual/installation/install_from_packages)
