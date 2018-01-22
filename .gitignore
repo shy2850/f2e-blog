@@ -68,3 +68,5 @@ output
 
 # fonts
 fonts/
+
+.vscode
